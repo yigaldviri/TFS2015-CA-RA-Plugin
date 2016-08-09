@@ -4,10 +4,6 @@
   "description": "RA extension with a task for Visual Studio Team Services.",
   "main": "ra.js",
   "author": "Yigal Dviri",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Microsoft/vso-vmware.git"
-  },
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.0",

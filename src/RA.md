@@ -53,7 +53,7 @@ Visual Studio Team Services or Team Foundation Server requires a service connect
     
     Leave the advanced options empty as it relevant only for Scratch strategy.
 
- ![Snapshot VMware VMs](images/snapshotTask.png)
+ ![Snapshot](images/snapshotTask.png)
 
 
 ### **Create and run a deployment plan from scratch**
@@ -83,5 +83,5 @@ Visual Studio Team Services or Team Foundation Server requires a service connect
     * **Properties**: Add a pairs of key-value to supply values to Nolio Template Properties.
     
     
- ![Snapshot VMware VMs](images/snapshotTaskScratch.png)
+ ![Snapshot scratch](images/snapshotTaskScratch.png)
  

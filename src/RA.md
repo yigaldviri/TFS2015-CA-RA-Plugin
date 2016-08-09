@@ -17,18 +17,18 @@ Visual Studio Team Services or Team Foundation Server requires a service connect
 
    1. Open the **Services** tab in your Visual Studio Team Services or Team Foundations Server **Control Panel**.
 
- ![VSTS/TFS Control Panel](Images/adminPanel.png)
+ ![VSTS/TFS Control Panel](images/adminPanel.png)
 
    2. From the **New Service Endpoint** list, select **CA Release Automation Server**.
 
- ![New RA Service Connection](Images/newService.png)
+ ![New RA Service Connection](images/newService.png)
 
    3. In the **Add New CA Release Automation Server Connection** pop-up dialog, provide the required details to connect to the RA Server:
      * Provide a user friendly name for the service endpoint in the **Connection Name** like **Nolio**.
      * Enter the **RA Server URL**, like **http://nolio-server:8080/** or **https://nolio-secured-server:443/**. Note that **port is needed**.
      * Enter a **Username** and **Password** that has the required access to the RA Server. Press **OK** to create the connection.
 
- ![RA Connection](Images/connection.png)
+ ![RA Connection](images/connection.png)
 
 
 ### **Run an existing deployment plan**
@@ -38,7 +38,7 @@ Visual Studio Team Services or Team Foundation Server requires a service connect
  
  1. Open your build or release definition and add the RA - Run Deployment Plan task. The task can be found in the **Deploy** section of the **Add Tasks** dialog.
 
- ![Add RA - Run Deployment Plan Task](Images/addRATask.png)
+ ![Add RA - Run Deployment Plan Task](images/addRATask.png)
 
  2. To run an existing deployment plan, fill-in the task parameters as described below:
     * **RA Service Connection**: In the dropdown, select the RA Server connection that was created above.
@@ -53,7 +53,7 @@ Visual Studio Team Services or Team Foundation Server requires a service connect
     
     Leave the advanced options empty as it relevant only for Scratch strategy.
 
- ![Snapshot VMware VMs](Images/snapshotTask.png)
+ ![Snapshot VMware VMs](images/snapshotTask.png)
 
 
 ### **Create and run a deployment plan from scratch**
@@ -83,5 +83,5 @@ Visual Studio Team Services or Team Foundation Server requires a service connect
     * **Properties**: Add a pairs of key-value to supply values to Nolio Template Properties.
     
     
- ![Snapshot VMware VMs](Images/snapshotTaskScratch.png)
+ ![Snapshot VMware VMs](images/snapshotTaskScratch.png)
  

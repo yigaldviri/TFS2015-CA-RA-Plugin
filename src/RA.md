@@ -38,7 +38,7 @@ Visual Studio Team Services or Team Foundation Server requires a service connect
  
  1. Open your build or release definition and add the RA - Run Deployment Plan task. The task can be found in the **Deploy** section of the **Add Tasks** dialog.
 
- ![Add RA - Run Deployment Plan Task](Images/addVMwareTask.png)
+ ![Add RA - Run Deployment Plan Task](Images/addRATask.png)
 
  2. To run an existing deployment plan, fill-in the task parameters as described below:
     * **RA Service Connection**: In the dropdown, select the RA Server connection that was created above.

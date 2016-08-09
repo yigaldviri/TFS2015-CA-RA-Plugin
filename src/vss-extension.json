@@ -1,0 +1,119 @@
+{
+    "manifestVersion": 1,
+    "id": "RA",
+    "name": "CA Release Automation",
+    "version": "1.0.0",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "publisher": "CATechnologiesRA",
+    "description": "Run an existing Deployment Plan or create and run a Deployment Plan out of Deployment Template",
+    "public": false,
+    "categories": [
+        "Build and release"
+    ],
+    "tags": [
+      "Nolio",
+      "Release Automation",
+      "CA Technologies",
+      "Deploy"
+    ],
+    "files": [
+        {
+            "path": "Tasks/RA"
+        },
+        {
+            "path": "images",
+            "addressable": true
+        }
+    ],
+    "icons": {
+        "default": "images/ca_as_128.png",
+        "large": "images/ca_as_512.png"
+    },
+    "content": {
+        "details": {
+            "path": "RA.md"
+    }
+    },
+    "links": {
+        "getstarted": {
+            "uri": "http://www.ca.com/us/products/ca-release-automation.html"
+        },
+        "support": {
+            "uri": " https://communities.ca.com/community/ca-release-automation"
+        }
+    },
+    "branding": {
+        "color": "#f6f7fb",
+        "theme": "light"
+    },
+    "contributions": [
+      {
+        "id": "endpoint-auth-scheme-custom",
+        "description": "RAcustomscheme.",
+        "type": "ms.vss-endpoint.service-endpoint-auth-scheme",
+        "targets": [
+          "ms.vss-endpoint.endpoint-auth-schemes"
+        ],
+        "properties": {
+          "name": "CustomAuthScheme",
+          "displayName": "RACustomAuthenticationScheme",
+          "inputDescriptors": [
+            {
+              "id": "RAusername",
+              "name": "RA username",
+              "description": "The username to access RA Server when using RA build task.",
+              "inputMode": "textbox",
+              "isConfidential": false,
+              "validation": {
+                "isRequired": true,
+                "dataType": "string"
+              }
+            },
+            {
+              "id": "RApassword",
+              "name": "RA password",
+              "description": "The password to access RA Server when using RA build task.",
+              "inputMode": "passwordbox",
+              "isConfidential": true,
+              "validation": {
+                "isRequired": true,
+                "dataType": "string"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "ca-ra-endpoint-type",
+        "description": "RAConnectionServiceEndpoint",
+        "type": "ms.vss-endpoint.service-endpoint-type",
+        "targets": [
+          "ms.vss-endpoint.endpoint-types"
+        ],
+        "properties": {
+          "name": "RA",
+          "displayName": "CA Release Automation Server",
+          "authenticationSchemes": [
+            {
+              "type": "endpoint-auth-scheme-custom"
+            }
+          ],
+          "helpMarkDown": "Server URL i.e. http://my-server:8080, https://my-secured-server:443 etc..."
+        }
+      },
+      {
+        "id": "RA-task",
+        "type": "ms.vss-distributed-task.task",
+        "targets": [
+          "ms.vss-distributed-task.tasks"
+        ],
+        "properties": {
+          "name": "Tasks/RA"
+        }
+      }
+    ]
+}

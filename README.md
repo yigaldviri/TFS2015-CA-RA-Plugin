@@ -1,12 +1,8 @@
 # Visual Studio Team Services Plugin
-<br/>
-<p align="center">
- <img title="What up, yo?" src="./truck.gif"/>
-</p>
-<br/>
+
 
 ## Overview
-This project implements a Visual Studio Team Services (a.k.a new TFS / TFS 2015 / whatever) build step extension for integrating with CA Technologies Release Automation.
+This project implements a Visual Studio Team Services (a.k.a new TFS / TFS 2015) build step extension for integrating with CA Technologies Release Automation.
 ### Tech stack
  - Typescript 
  - Gulp  
